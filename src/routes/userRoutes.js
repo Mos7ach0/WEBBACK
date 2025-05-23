@@ -29,7 +29,7 @@ const router = express.Router();
  *                   id:
  *                     type: integer
  *                     example: 1
- *                   nombre:
+ *                   name:
  *                     type: string
  *                     example: Juan
  *                   email:
@@ -63,7 +63,7 @@ router.get("/usuarios/:id", getUserById);
  * /api/usuarios:
  *   post:
  *     summary: Crear un nuevo usuario
- *     description: Crea un nuevo usuario con nombre, correo y contraseña.
+ *     description: Crea un nuevo usuario con name, correo y contraseña.
  *     requestBody:
  *       required: true
  *       content:
@@ -71,11 +71,11 @@ router.get("/usuarios/:id", getUserById);
  *           schema:
  *             type: object
  *             required:
- *               - nombre
+ *               - name
  *               - email
  *               - password
  *             properties:
- *               nombre:
+ *               name:
  *                 type: string
  *               email:
  *                 type: string
@@ -92,7 +92,7 @@ router.post("/usuarios", createUser);
  * /api/usuarios/{id}:
  *   put:
  *     summary: Actualizar un usuario
- *     description: Modifica los datos de un usuario existente (nombre, correo, contraseña).
+ *     description: Modifica los datos de un usuario existente (name, correo, contraseña).
  *     parameters:
  *       - name: id
  *         in: path
@@ -106,7 +106,7 @@ router.post("/usuarios", createUser);
  *           schema:
  *             type: object
  *             properties:
- *               nombre:
+ *               name:
  *                 type: string
  *               email:
  *                 type: string
@@ -158,7 +158,7 @@ router.put("/usuarios/:id", updateUser);
  *                   properties:
  *                     id:
  *                       type: integer
- *                     nombre:
+ *                     name:
  *                       type: string
  *                     email:
  *                       type: string
