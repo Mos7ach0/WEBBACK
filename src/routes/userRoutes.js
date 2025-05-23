@@ -136,10 +136,10 @@ router.put("/usuarios/:id", updateUser);
  *             properties:
  *               email:
  *                 type: string
- *                 example: j123@tec.mx
+ *                 example: A00837671@tec.mx
  *               password:
  *                 type: string
- *                 example: 123
+ *                 example: 123456
  *     responses:
  *       200:
  *         description: Login exitoso.
